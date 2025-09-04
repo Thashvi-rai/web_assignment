@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Bio-data</title>
+  <title> My Bio-data</title>
   <link rel="stylesheet" href="style.css">
 
   <!-- Google Fonts -->
@@ -11,14 +11,17 @@
   <style>
     body {
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #dbeafe, #f0f9ff);
+      background: linear-gradient(135deg, #63849e, #f0f2f5);
       margin: 0;
       padding: 0;
       color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
 
     header {
-      background: #88c5f0;
+      background: #6cd2f2;
       color: white;
       padding: 20px;
       text-align: center;
@@ -34,7 +37,7 @@
     }
 
     nav a:hover {
-      color: #93c5fd;
+      color: #dbeafe;
     }
 
     h1 {
@@ -43,125 +46,111 @@
     }
 
     .biodata {
-      width: 70%;
-      margin: 30px auto;
-    }
-
-    details {
-      margin: 12px 0;
-      padding: 15px;
-      border: none;
-      border-radius: 10px;
+      flex: 1;
+      width: 75%;
+      margin: 40px auto;
       background: white;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
-      cursor: pointer;
-      transition: transform 0.2s, box-shadow 0.2s;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
-    details:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+    table {
+      width: 100%;
+      border-collapse: collapse;
     }
 
-    details summary {
-      font-weight: 600;
-      font-size: 1.1em;
-      color: #1e3a8a;
-      outline: none;
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+      vertical-align: top;
     }
 
-    details[open] {
+    th {
       background: #f0f9ff;
+      color: #1e3a8a;
+      font-size: 1em;
+      width: 25%;
     }
 
-    details p {
-      margin: 8px 0 0;
-      padding-left: 15px;
-      color: #612424;
+    td {
       font-size: 0.95em;
+      color: #444;
+    }
+
+    ul {
+      margin: 5px 0 0 20px;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 4px 0;
     }
 
     footer {
-      background: #a7d1e8;
+      background: #343a40;
       color: white;
       padding: 15px;
       text-align: center;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
       font-size: 0.9em;
+      margin-top: auto;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1 >My Bio-data</h1>
+    <h1>📜 My Bio-data</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="resume.html">Resume</a>
-      <a href="biodata.html">Bio-data</a>
+      <a href="biodata.html" class="active">Bio-data</a>
     </nav>
   </header>
 
   <section class="biodata">
-    <details>
-      <summary>🧑‍💼 Full Name</summary>
-      <p>Thashvi Rai K</p>
-    </details>
-
-    <details>
-      <summary>🎂 Date of Birth</summary>
-      <p>30/11/2004</p>
-    </details>
-
-    <details>
-      <summary>👨‍👧 Father’s Name</summary>
-      <p>Jayashankar Rai K</p>
-    </details>
-
-    <details>
-      <summary>👩 Mother’s Name</summary>
-      <p>Chithra Jayashankar</p>
-    </details>
-
-    <details>
-      <summary>🏠 Address</summary>
-      <p>Poorna House, Panagalai, Parladka, Puttur- 574201</p>
-    </details>
-
-    <details>
-      <summary>✉️ Email</summary>
-      <p>thashvirai1130.tr@gmail.com</p>
-    </details>
-
-    <details>
-      <summary>📞 Phone</summary>
-      <p>9632093381</p>
-    </details>
-
-    <details>
-      <summary>🎯 Hobbies</summary>
-       <details>
-        <summary>📚 Reading</summary>
-        <p>I have been reading novels since I was in school and I have profound interest for reading novels anytime.</p>
-      </details>
-      <details>
-        <summary>💻 Coding</summary>
-        <p>Ever since joining Computer Science and Engineering, I have come up with this enjoyment regarding coding in languages C, C++ and Java.</p>
-      </details>
-      <details>
-        <summary>🎵 Music</summary>
-        <p>I started dancing since I was 6 years old, so naturally music became one of my interests.</p>
-      </details>
-      <details>
-        <summary>💃 Dance</summary>
-        <p>I am a Bharathanatyam Dancer, and have been dancing for over 10 years.</p>
-      </details>
-      <details>
-        <summary>🎤 Being an MC</summary>
-        <p>I have been keeping up as an MC for the formal events in the college.</p>
-      </details>
-    </details>
+    <table>
+      <tr>
+        <th>🧑‍💼 Full Name</th>
+        <td>Thashvi Rai K</td>
+      </tr>
+      <tr>
+        <th>🎂 Date of Birth</th>
+        <td>30/11/2004</td>
+      </tr>
+      <tr>
+        <th>👨‍👧 Father’s Name</th>
+        <td>Jayashankar Rai K</td>
+      </tr>
+      <tr>
+        <th>👩 Mother’s Name</th>
+        <td>Chithra Jayashankar</td>
+      </tr>
+      <tr>
+        <th>🏠 Address</th>
+        <td>Poorna House, Panagalai, Parladka, Puttur - 574201</td>
+      </tr>
+      <tr>
+        <th>✉️ Email</th>
+        <td>thashvirai1130.tr@gmail.com</td>
+      </tr>
+      <tr>
+        <th>📞 Phone</th>
+        <td>9632093381</td>
+      </tr>
+      <tr>
+        <th>🎯 Hobbies</th>
+        <td>
+          <ul>
+            <li><strong>📚 Reading:</strong> I have been reading novels since school and have a strong passion for them.</li>
+            <li><strong>💻 Coding:</strong> Enjoy programming in C, C++, and Java since joining CSE.</li>
+            <li><strong>🎵 Music:</strong> Music has been part of my life since childhood due to my dance training.</li>
+            <li><strong>💃 Dance:</strong> Bharathanatyam dancer with over 10 years of experience.</li>
+            <li><strong>🎤 MC:</strong> Frequently host formal events at college as an MC.</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
   </section>
 
   <footer>
